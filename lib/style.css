@@ -37,8 +37,7 @@
                     flex: 1;
                 }
                 
-                .content-row>.cell {
-                    margin-top: 10px;
+                .content-row-upper-top-margin {
                 }
                 
                 .cell-upper-content {
