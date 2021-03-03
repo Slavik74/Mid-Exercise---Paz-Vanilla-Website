@@ -19,17 +19,13 @@ nav ul>li>a {
     font-size: 15px;
     font-weight: bold;
     text-decoration: none;
-    padding: 5px;
+    padding: 7px;
     display: block;
     text-align: right;
 }
 
 nav .dropdown-content a {
     border-bottom: 1px solid rgb(221, 221, 221);
-}
-
-nav ul>li:last-child a {
-    border-bottom: 0;
 }
 
 nav ul>li>a:hover,
@@ -43,11 +39,13 @@ nav .dropdown-content a:hover {
 }
 
 .home {
-    flex: 1;
+    display: block;
+    position: relative;
+    bottom: 7px;
+    width: 18px;
+    height: 18px;
     background-image: url("/images/menu_home_blue.png");
     background-repeat: no-repeat;
-    width: 17px;
-    margin-left: 10px;
 }
 
 .dropdown {
@@ -65,7 +63,7 @@ nav .dropdown-content a:hover {
 }
 
 .dropdown>a {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 0px;
 }
 
 .dropdown:hover>.dropdown-content {
@@ -73,8 +71,9 @@ nav .dropdown-content a:hover {
 }
 
 nav .sep {
-    border-right: solid 1px rgb(179, 177, 177);
-    padding: 0 10px 0 10px;
+    margin: 0 14px;
+    color: rgb(178, 178, 178)
+    /*border-right: solid 2px rgb(179, 177, 177);*/
 }
 
 

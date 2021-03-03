@@ -8,7 +8,8 @@
 
     <link rel="stylesheet" href="lib/style.css">
     <link rel="stylesheet" href="lib/nav-bar.css">
-    <title>Flex pagelayout</title>
+    <link rel="stylesheet" href="lib/footer-menu.css">
+    <title>פז - עמוד הבית</title>
 
 </head>
 
@@ -16,13 +17,14 @@
 
     <body>
         <div class="main-container">
-
             <header>
                 <div class="header-content">
                     <div class="search-box">
-
                         <input name="SearchTextBox" type="text" value="רשום מילת חיפוש" id="SearchTextBox" onfocus="this.value = ''" onblur="resetSearch()">
                         <a href="#"><img src="images/search_button.png" alt="Search"></a>
+                    </div>
+                    <div class="langmenu-box">
+                        <a class="langmenu" href="#">English</a>
                     </div>
 
                     <nav>
@@ -33,7 +35,7 @@
                                 </a>
                             </li>
 
-                            <li class="sep"></li>
+                            <li class="sep">|</li>
 
                             <li class="dropdown">
                                 <a href="#">
@@ -81,7 +83,7 @@
                                 </ul>
                             </li>
 
-                            <li class="sep"></li>
+                            <li class="sep">|</li>
 
                             <li class="dropdown">
                                 <a href="#">
@@ -114,7 +116,7 @@
                                 </ul>
                             </li>
 
-                            <li class="sep"></li>
+                            <li class="sep">|</li>
 
                             <li class="dropdown">
                                 <a href="#">
@@ -160,7 +162,7 @@
                                 </ul>
                             </li>
 
-                            <li class="sep"></li>
+                            <li class="sep">|</li>
 
                             <li class="dropdown">
                                 <a href="#">
@@ -200,7 +202,7 @@
                                 </ul>
                             </li>
 
-                            <li class="sep"></li>
+                            <li class="sep">|</li>
 
                             <li class="dropdown">
                                 <a href="#">
@@ -235,7 +237,7 @@
                                 </ul>
                             </li>
 
-                            <li class="sep"></li>
+                            <li class="sep">|</li>
 
                             <li class="dropdown">
                                 <a href="#">
@@ -254,7 +256,6 @@
                                         </a>
                                     </li>
 
-
                                     <li>
                                         <a href="#">
                                             <span>קריירה</span>
@@ -263,7 +264,7 @@
                                 </ul>
                             </li>
 
-                            <li class="sep"></li>
+                            <li class="sep">|</li>
 
                             <li class="dropdown">
                                 <a href="#">
@@ -275,8 +276,6 @@
                                             <span>פרסומות</span>
                                         </a>
                                     </li>
-
-
 
                                     <li>
                                         <a href="#">
@@ -292,6 +291,7 @@
                     <div class="logo"><img src="images/paz_logo.png" alt="Paz"></div>
 
                 </div>
+                <div class="header-content-bottom"></div>
             </header>
 
             <main class="main-content">
@@ -303,7 +303,7 @@
                                 <div class="cell-text">
                                     <h3>קמעונאות ומסחר</h3>
                                     <p>במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...<br></p>
-                                    <a href="#" class="readMore white" target="_blank">
+                                    <a href="#" class="readmore-white" target="_blank">
                                         <span>קרא עוד</span>
                                     </a>
                                 </div>
@@ -315,7 +315,7 @@
                                 <div class="cell-text">
                                     <h3>זיקוק</h3>
                                     <p>פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...</p>
-                                    <a href="#" class="readMore white" target="_self">
+                                    <a href="#" class="readmore-white" target="_self">
                                         <span>קרא עוד</span>
                                     </a>
                                 </div>
@@ -327,7 +327,7 @@
                                 <div class="cell-text">
                                     <h3>תעשיות ושירותים</h3>
                                     <p>תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...<br></p>
-                                    <a href="#" class="readMore white" target="_self">
+                                    <a href="#" class="readmore-white" target="_self">
                                         <span>קרא עוד</span>
                                     </a>
                                 </div>
@@ -343,12 +343,11 @@
                                 <div class="cell-lower-content">
                                     <div class="cell-text">
                                         <p class="header">כרטיס אשראי שופרסל וכרטיס אשראי יש</p>
-                                        <img src="images/paz_250x110059890678.jpg" class="graph" alt="כרטיס אשראי שופרסל וכרטיס אשראי יש">
-                                        <div class="readmore-box">
-                                            <a href="#" class="readmore yellow" target="_blank">
-                                                <span>לפרטים נוספים</span>
-                                            </a>
-                                        </div>
+                                        <div class="hr"></div>
+                                        <img src="images/paz_250x110059890678.jpg" alt="כרטיס אשראי שופרסל וכרטיס אשראי יש">
+                                        <a href="#" class="readmore-yellow" target="_blank">
+                                            <span>לפרטים נוספים</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -357,15 +356,53 @@
                         <div class="cell margins">
                             <div class="cell-lower-container">
                                 <div class="cell-lower-content">
-                                    cell 2-2
+                                    <div class="cell-text">
+                                        <p class="header">yellow click&amp;pick;</p>
+                                        <div class="hr"></div>
+                                        <img src="/images/250X110571325734.jpg" alt="yellow click&amp;pick">
+                                        <a href="#" class="readmore-yellow" target="_blank">
+                                            <span>לפרטים נוספים</span>
+                                        </a>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
+                        </span>
+
+
                         <div class="cell">
                             <div class="cell-lower-container">
                                 <div class="cell-lower-content">
-                                    cell 2-1
+                                    <div class="cell-text">
+
+                                        <p class="header">התחנות שלנו בדרך שלך</p>
+                                        <div class="hr"></div>
+
+
+                                        <div class="stations-container">
+                                            <div class="readmore-box">
+                                                <a href="#" class="readmore-yellow stations-readmore" target="_self">
+                                                    <span>צפון</span>
+                                                </a>
+                                                <br>
+                                                <a href="#" class="readmore-yellow stations-readmore" target="_self">
+                                                    <span>מרכז</span>
+                                                </a>
+                                                <br>
+                                                <a href="#" class="readmore-yellow stations-readmore" target="_self">
+                                                    <span>דרום</span>
+                                                </a>
+
+                                            </div>
+
+                                            <div><img class="map" src="../Images/Untitled-3058756287.jpg" alt="התחנות שלנו בדרך שלך"></div>
+                                        </div>
+
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -376,7 +413,72 @@
             </main>
         </div>
 
-        <footer>footer</footer>
+        <footer>
+
+            <div class="footer-menu">
+                <div class="footer-container">
+                    <ul>
+                        <li>
+                            <a class="fbLink" href="www.facebook.com/YellowPaz" target="_blank"></a>
+                        </li>
+                        <li class="sep">|</li>
+
+                        <li>
+                            <a title="קישור לעמוד הבית" href="index.html">עמוד הבית</a>
+                        </li>
+
+                        <li class="sep">|</li>
+
+                        <li>
+                            <a title="קישור למחירונים" href="#">מחירונים</a>
+                        </li>
+
+                        <li class="sep">|</li>
+
+                        <li>
+                            <a title="קישור לקריירה" href="#">קריירה</a>
+                        </li>
+
+                        <li class="sep">|</li>
+
+                        <li>
+                            <a title="קישור לתנאי שימוש" href="#">תנאי שימוש</a>
+                        </li>
+
+                        <li class="sep">|</li>
+
+                        <li>
+                            <a title="קישור לנגישות" href="#">נגישות</a>
+                        </li>
+
+                        <li class="sep">|</li>
+
+                        <li>
+                            <a title="קישור למפת אתר" href="#">מפת אתר</a>
+                        </li>
+
+                        <li class="sep">|</li>
+
+                        <li>
+                            <a title="קישור לצור קשר" href="contact.html">צור קשר</a>
+                        </li>
+
+                        <li class="sep">|</li>
+
+                        <li>
+                            <a title="קישור לשטחי מסחר" href="#">שטחי מסחר</a>
+                        </li>
+
+                        <li class="sep">|</li>
+                        <li><a class="footer-message" href="#" target="_blank">הסדר פשרה בתובענה הייצוגית בעניין הסדר פזומט</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </footer>
     </body>
 
 </body>
