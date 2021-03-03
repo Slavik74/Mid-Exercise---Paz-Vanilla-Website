@@ -20,6 +20,8 @@
     .content-row {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
     
     .main-container {
@@ -28,6 +30,7 @@
     
     .empty-sides {
         flex: 1;
+        padding: 20px;
     }
     
     .main-container header {
