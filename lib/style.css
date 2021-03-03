@@ -41,7 +41,7 @@
         align-items: center;
         height: 105px;
         background-color: #bcbcbc;
-        background-image: url("//images/header_bg.png");
+        background-image: url("/images/header_bg.png");
         background-repeat: repeat-x;
     }
     
@@ -60,7 +60,7 @@
         position: absolute;
         top: 30px;
         right: 20px;
-        background: url("//images/paz_logo.png");
+        background: url("/images/paz_logo.png");
         background-repeat: no-repeat
     }
     
@@ -122,17 +122,17 @@
     }
     
     .cell-bg-img11 {
-        background-image: url('images/×¤×–×§×¨_-291_354410564000.JPG');
+        background-image: url('/images/×¤×–×§×¨_-291_354410564000.JPG');
         background-repeat: no-repeat;
     }
     
     .cell-bg-img12 {
-        background-image: url('images/Picture-046410251500.JPG');
+        background-image: url('/images/Picture-046410251500.JPG');
         background-repeat: no-repeat;
     }
     
     .cell-bg-img13 {
-        background-image: url('images/1908364606615453350.JPG');
+        background-image: url('/images/1908364606615453350.JPG');
         background-repeat: no-repeat;
     }
     
@@ -150,7 +150,7 @@
         left: 38px;
         bottom: 6px;
         color: #fff;
-        background: url("images/hp_tab_text_bg.png");
+        background: url("/images/hp_tab_text_bg.png");
         background-repeat: no-repeat;
     }
     
@@ -181,11 +181,11 @@
     }
     
     a.readMore.white {
-        background: url("images/read_more_white.png") no-repeat left center;
+        background: url("/images/read_more_white.png") no-repeat left center;
     }
     
     a.readMore.yellow {
-        background: url("images/read_more_yellow.png") no-repeat left center;
+        background: url("/images/read_more_yellow.png") no-repeat left center;
     }
     /***** FOOTER *****/
     
@@ -197,7 +197,7 @@
         color: white;
         text-align: center;
         background-color: #bcbcbc;
-        background-image: url("images/footer_bg.png");
+        background-image: url("/images/footer_bg.png");
         background-repeat: repeat-x;
     }
     /******************/
