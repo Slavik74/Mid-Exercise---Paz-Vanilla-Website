@@ -6,7 +6,7 @@ footer {
     z-index: 100;
     bottom: 0px;
     background-color: #bcbcbc;
-    background: url("/images/footer_bg.png");
+    background: url("../images/footer_bg.png");
     background-repeat: repeat-x;
 }
 
