@@ -41,7 +41,7 @@
         align-items: center;
         height: 105px;
         background-color: #bcbcbc;
-        background-image: url("/images/header_bg.png");
+        background-image: url("//images/header_bg.png");
         background-repeat: repeat-x;
     }
     
@@ -60,7 +60,7 @@
         position: absolute;
         top: 30px;
         right: 20px;
-        background: url("/images/paz_logo.png");
+        background: url("//images/paz_logo.png");
         background-repeat: no-repeat
     }
     
@@ -122,17 +122,17 @@
     }
     
     .cell-bg-img11 {
-        background-image: url('/images/×¤×–×§×¨_-291_354410564000.JPG');
+        background-image: url('images/×¤×–×§×¨_-291_354410564000.JPG');
         background-repeat: no-repeat;
     }
     
     .cell-bg-img12 {
-        background-image: url('/images/Picture-046410251500.JPG');
+        background-image: url('images/Picture-046410251500.JPG');
         background-repeat: no-repeat;
     }
     
     .cell-bg-img13 {
-        background-image: url('/images/1908364606615453350.JPG');
+        background-image: url('images/1908364606615453350.JPG');
         background-repeat: no-repeat;
     }
     
@@ -140,38 +140,52 @@
         margin: 0 10px;
     }
     
-    .cell div.text {
-        width: 228px;
-        height: 77px;
+    .cell div.cell-text {
+        width: 248px;
+        height: 97px;
+        border-bottom-right-radius: 10px;
         overflow: hidden;
-        padding: 10px;
         position: absolute;
+        padding: 10px;
         left: 38px;
         bottom: 6px;
         color: #fff;
-        background: url("/images/hp_tab_text_bg.png");
+        background: url("images/hp_tab_text_bg.png");
         background-repeat: no-repeat;
     }
     
-    .cell-upper-content div.text h3 {
+    .cell-upper-content div.cell-text h3 {
         font-size: 14px;
         font-weight: bold;
+        padding: 0;
+        margin: 0;
     }
     
-    .cell-upper-content div.text p {
+    .cell-upper-content div.cell-text p,
+    .cell-upper-content div.cell-text a {
         font-size: 13px;
         margin-top: 4px;
+        padding: 0;
+        margin: 0;
     }
     
-    .cell-upper-content div.text a.readMore {
+    .cell-upper-content div.cell-text a.readMore {
         float: left;
         color: #fff;
         position: relative;
-        bottom: 4px;
+        bottom: 8px;
     }
     
-    #hp .tab div.text a.readMore:hover {
+    .cell-upper-content div.cell-text a.readMore:hover {
         color: #005ca0;
+    }
+    
+    a.readMore.white {
+        background: url("images/read_more_white.png") no-repeat left center;
+    }
+    
+    a.readMore.yellow {
+        background: url("images/read_more_yellow.png") no-repeat left center;
     }
     /***** FOOTER *****/
     
@@ -183,7 +197,7 @@
         color: white;
         text-align: center;
         background-color: #bcbcbc;
-        background-image: url("/images/footer_bg.png");
+        background-image: url("images/footer_bg.png");
         background-repeat: repeat-x;
     }
     /******************/
