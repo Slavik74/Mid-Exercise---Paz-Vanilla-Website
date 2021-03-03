@@ -49,7 +49,7 @@ footer .footer-menu li a.fbLink {
     bottom: 2px;
     width: 18px;
     height: 18px;
-    background: url("/images/fb_icon.png");
+    background: url("../images/fb_icon.png");
     background-repeat: no-repeat;
 }
 
