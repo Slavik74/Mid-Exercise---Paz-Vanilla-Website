@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="lib/nav-bar.css">
     <link rel="stylesheet" href="lib/footer-menu.css">
     <link rel="stylesheet" href="lib/contact.css">
+
+    <script src="lib/script.js"></script>
     <title>פז - צור קשר</title>
 
 </head>
@@ -299,107 +301,132 @@
                 <div class="empty-sides">
 
                     <div class="side-menu">
-                        <a href="contact.html">
-                            <span class="menu-symbol"> &#129168</span>
-                            <span>צור קשר</span>
-                        </a>
+                        <ul>
+                            <li>
+                                <a href="contact.html">
+                                    <span>צור קשר</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
                 <article class="content">
-
-                    <p class="header">צור קשר</p>
-
-                    <div class="cell">
-                        <div class="form-cell-container">
-                            <div class="form-cell-content">
-                                <div class="cell-text">
-                                    <p class="form-header">צור קשר</p>
-                                    <div class="hr"></div>
+                    <nav class="top-menu">
+                        <span><a href="index.html">עמוד הבית</a> > צור קשר</span>
+                    </nav>
+                    <div class="content-header"><span>צור קשר</span></div>
 
 
-                                    <div class="form">
+                    <div class="content-row content-row-lower-top-margin">
+                        <div class="cell">
+                            <div class="form-cell-container">
+                                <div class="form-cell-content">
+                                    <div class="cell-text">
+                                        <p class="form-header form-h1">צור קשר</p>
+                                        <form id="my-form">
 
-                                        <span class="form-h2">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו
-                                            נשמח לעמוד לרשותכם:</span><br>
-                                        <span class="form-instructions">* השדות המסומנים בכוכבית (*) הינם שדות
-                                            חובה</span>
+                                            <div class="form">
+                                                <span class="form-h2">ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם:</span><br>
+                                                <span class="form-instructions">* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
+                                                <div class="form-fields">
+                                                    <div class="form-line">
+                                                        <label for="txt-fname"><span>* שם פרטי</span></label>
+                                                        <input class="input" name="txt-fname" type="text" id="txt-fname" required>
+                                                        <span class="input-validator">שדה חובה</span>
+                                                    </div>
+                                                    <div class="form-line">
+                                                        <label for="txt-lname">* שם משפחה</label>
+                                                        <input type="text" class="input" name="txt-lname" id="txt-lname" required>
+                                                        <span class="input-validator">שדה חובה</span>
+                                                    </div>
+                                                    <div class="form-line">
+                                                        <label for="txt-phone">* טלפון</label>
+                                                        <input type="text" class="input" name="txt-phone" id="txt-phone" required>
+                                                        <span class="input-validator">שדה חובה</span>
+                                                    </div>
+                                                    <div class="form-line">
+                                                        <label for="txt-email">* E-mail</label>
+                                                        <input class="input" name="txt-email" type="email" id="txt-email" required>
+                                                        <span class="input-validator">קלט לא מתאים</span>
+                                                        <span class="input-validator">שדה חובה</span>
+                                                    </div>
+                                                    <div class="form-line">
+                                                        <label for="contact-content"></label>
+                                                        <textarea class="input" name="contact-content" rows="5" cols="33" id="contact-content" onfocus="this.value = ''">תוכן הפנייה</textarea>
+                                                    </div>
 
-                                        <div class="fields">
-                                            <div class="line">
-                                                <label for="fname">
-                                                    <span class="requred">*</span>&nbsp;שם פרטי</label>
-                                                <input name="fname" type="text" id="fname" class="" />
-                                                <div class="validatorDiv"><span id="ctl00_ctl07" class="validator" style="color:Red;display:none;">שדה חובה</span></div>
+                                                    <div class="form-line">
+                                                        <a onclick="sendForm();" id="btnSend" href="#">
+
+                                                            <span class="text">שלח</span>
+
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="line">
-                                                <label for="htmlae0a7a5d"><span class="requred">*</span>&nbsp;שם
-                                                    משפחה</label>
-                                                <input name="ctl00$htmlae0a7a5d" type="text" id="ctl00_htmlae0a7a5d" class="" />
-                                                <div class="validatorDiv"><span id="ctl00_ctl11" class="validator" style="color:Red;display:none;">שדה חובה</span></div>
-                                            </div>
-                                            <div class="line">
-                                                <label for="html2ab0cfa3"><span
-                                                        class="requred">*</span>&nbsp;טלפון</label>
-                                                <input name="ctl00$html2ab0cfa3" type="text" id="ctl00_html2ab0cfa3" class="" />
-                                                <div class="validatorDiv"><span id="ctl00_ctl15" class="validator" style="color:Red;display:none;">שדה חובה</span></div>
-                                            </div>
-                                            <div class="line">
-                                                <label for="html82d9c4ae"><span
-                                                        class="requred">*</span>&nbsp;E-mail</label>
-                                                <input name="ctl00$html82d9c4ae" type="text" id="ctl00_html82d9c4ae" class=" emailField" />
-                                                <span id="ctl00_ctl18" class="validator" style="color:Red;display:none;">קלט לא מתאים</span>
-                                                <div class="validatorDiv"><span id="ctl00_ctl20" class="validator" style="color:Red;display:none;">שדה חובה</span></div>
-                                            </div>
-                                            <div class="line">
-                                                <label for="contact-content"></label>
-                                                <textarea name="contact-content" rows="5" cols="40" id="contact-content" class="" onfocus="this.value = ''">תוכן הפנייה</textarea>
-                                                <div class="validatorDiv"></div>
-                                            </div>
+                                        </form>
 
-                                            <a onclick="return formValidate();" id="btnSend" href="#">
-
-                                                <span class="text">שלח</span>
-
-                                            </a>
-                                        </div>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
 
-
-
                 </article>
                 <div class="empty-sides">
 
-                    <div class="sideCubes">
+                    <div class="left-side-top-margin"></div>
 
-                        <div class="cube textCube">
-                            <p>פרטי יצירת קשר</p>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum.
-                                </p>
+                    <div class="content-row content-row-lower-top-margin">
+                        <div class="cell">
+                            <div class="form-cell-container">
+                                <div class="form-cell-content form-cell-content-left-side">
+                                    <div class="cell-text">
+                                        <div class="cell-text-header">
+                                            <p class="left-side-header form-h1">פרטי יצירת קשר</p>
+                                        </div>
+                                        <form id="my-form">
+
+                                            <div class="form">
+                                                <span class="form-h2">פז חברת מפט בע"מ</span><br>
+                                                <div>
+                                                    <span>יורו פארק, בניין הולנד<br/>קיבוץ יקום 60972<br/>טל. שירות לקוחות 1-800-774-774<br/>פקס.09-8641714</span>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="cube textCube">
-                            <p>עוד בפז</p>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum.
-                                </p>
-                            </div>
-
                         </div>
                     </div>
 
+                    <div class="content-row content-row-lower-top-margin">
+                        <div class="cell">
+                            <div class="form-cell-container">
+                                <div class="form-cell-content form-cell-content-left-side">
+                                    <div class="cell-text">
+                                        <div class="cell-text-header">
+                                            <p class="left-side-header form-h1">עוד בפז</p>
+                                        </div>
+                                        <form id="my-form">
+
+                                            <div class="form">
+                                                <span class="form-h2">ליצירת קשר עם דוברות פז</span><br>
+                                                <a href="https://web.archive.org/web/20170705155824/mailto: d@paz.co.il">לחצו כאן&gt;&gt;</a>
+                                                <br>
+                                                <span class="form-h2">רוצים לעבוד בפז?</span><br>
+                                                <a href="index.aspx?id=4168">לחצו כאן&gt;&gt;</a>&#160;
+
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </main>

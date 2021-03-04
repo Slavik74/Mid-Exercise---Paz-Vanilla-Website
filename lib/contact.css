@@ -1,109 +1,236 @@
-    /* Contact us */
-    
-    .side-menu {
-        display: flex;
-        align-items: flex-end;
-        margin-top: auto;
-        flex-direction: column;
-        height: fit-content;
-        width: 100%;
-        z-index: 100;
-    }
-    
-    .side-menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-    
-    .side-menu a {
-        color: #000;
-        border-top: 1px solid rgb(222, 222, 222);
-        background-color: #bcbcbc;
-        background-image: linear-gradient(0deg, rgba(204, 204, 204, 1) 0%, rgba(255, 255, 255, 1) 100%);
-        font-size: 12px;
-        text-decoration: none;
-        padding: 7px;
-        margin: 7px;
-        display: block;
-        text-align: right;
-        width: 120px;
-        height: 40px;
-    }
-    
-    .side-menu a:hover {
-        color: #005ca0;
-        text-decoration: underline;
-    }
-    
-    .side-menu .menu-symbol {
-        color: #005ca0;
-        font-size: 2em;
-        padding-left: 10px;
-    }
-    /**************/
-    
-    .form-header {
-        font-size: 14px;
-        font-weight: bold;
-        color: navy;
-        margin-bottom: 7px;
-        padding: 0;
-    }
-    
-    .form-h2 {
-        font-size: 13px;
-        font-weight: bold;
-        color: rgb(109, 109, 109);
-    }
-    
-    .form-instructions {
-        font-size: 11px;
-        color: rgb(109, 109, 109);
-    }
-    
-    div .form {
-        font-size: 12px;
-        color: rgb(109, 109, 109);
-    }
-    
-    div .line {
-        padding: 5px;
-    }
-    
-    label {
-        display: inline-block;
-        width: 140px;
-        text-align: right;
-    }
-    
-    .fields {
-        width: 330px;
-        margin: auto;
-    }
-    
-    ​ .form-cell-container {
-        width: 430px;
-        height: 300px;
-        background: linear-gradient(0deg, rgba(240, 240, 240, 1) 0%, rgba(224, 224, 224, 1) 100%);
-        border-top-right-radius: 10px 10px;
-        padding: 1.5px 1.5px 0 1.5px;
-    }
-    
-    .form-cell-content {
-        display: inline-block;
-        vertical-align: top;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        padding: 0px 20px 10px;
-        margin: 0;
-        background: rgb(170, 170, 170);
-        background: linear-gradient(0deg, rgba(235, 235, 235, 1) 0%, rgba(255, 255, 255, 1) 100%);
-        border-top-right-radius: 10px;
-    }
-    
-    .form-cell-content div.cell-text {
-        height: 100%;
-    }
+/* Header menu */
+
+nav .home {
+    background-image: url("../images/menu_home.png");
+}
+
+
+/* ********* */
+
+
+/* content top menu */
+
+.top-menu {
+    height: fit-content;
+    width: 100%;
+    align-items: initial;
+    padding-bottom: 20px;
+}
+
+.top-menu>span>a {
+    text-decoration: none;
+    /*background-color: aqua;*/
+}
+
+.top-menu>span>a:hover {
+    text-decoration: underline;
+}
+
+
+/* ********* */
+
+
+/* side menu */
+
+.side-menu {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    z-index: 100;
+    margin-top: 10px;
+}
+
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content
+}
+
+ul li {
+    position: relative;
+}
+
+.side-menu ul>li::before {
+    position: absolute;
+    top: calc(50% - 0.75em);
+    content: "\01F890";
+    font-size: 2em;
+    color: #005ca0;
+}
+
+.side-menu ul>li>a {
+    display: inline-block;
+    border-top: 1px solid rgb(222, 222, 222);
+    background-color: #bcbcbc;
+    background-image: linear-gradient(0deg, rgba(204, 204, 204, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 12px;
+    margin: 0px;
+    text-align: right;
+    width: 115px;
+    height: 37px;
+}
+
+.side-menu a:hover {
+    color: #005ca0;
+    text-decoration: underline;
+}
+
+.side-menu .menu-symbol {
+    color: #005ca0;
+    font-size: 2em;
+    padding-left: 10px;
+}
+
+
+/* ********* */
+
+.main-content {
+    font-size: 12px;
+    color: rgb(109, 109, 109);
+}
+
+.content-header {
+    font-size: 1.3em;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    padding-bottom: 3px;
+    width: 400px;
+}
+
+.form-header {
+    color: rgb(0, 92, 160);
+    margin-bottom: 7px;
+    padding: 0;
+}
+
+.form-h2 {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+}
+
+.form-h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.form-instructions {
+    font-size: 11px;
+    color: rgb(109, 109, 109);
+}
+
+div .form-line {
+    display: flex;
+    width: 250px;
+    padding: 3px;
+    margin: 1px;
+    align-items: baseline;
+}
+
+div .form-line>a {
+    padding: 3px 10px 3px 10px;
+    background-color: rgb(5, 148, 214);
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    /* background: linear-gradient(0deg, rgba(14, 165, 230, 1) 0%, rgba(2, 30, 185, 1) 100%);*/
+    background-image: url(../images/form-send-blue.png);
+    background-repeat: no-repeat;
+    /* border-color: rgb(135, 167, 191);*/
+    border-top-right-radius: 3px;
+    width: 54px;
+    height: 24px;
+    margin-right: auto;
+}
+
+div .form-line>a:hover {
+    background-image: url(../images/form-send-orange.png);
+}
+
+label {
+    margin-left: auto;
+    text-align: right;
+    text-align: left;
+}
+
+.input {
+    border: 1px solid rgb(128, 137, 146);
+    font-family: 'Arial (Hebrew)', Arial;
+    font-size: 12px;
+    color: rgb(109, 109, 109);
+    padding: inherit
+}
+
+.form {
+    width: 315px;
+}
+
+.form-fields {
+    width: 330px;
+    margin: auto;
+}
+
+.form-cell-container {
+    width: fit-content;
+    background: linear-gradient(0deg, rgba(240, 240, 240, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    border-top-right-radius: 10px 10px;
+    padding: 1.5px 1.5px 0 1.5px;
+}
+
+.form-cell-content {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    width: 350px;
+    height: 100%;
+    padding: 0px 20px 10px;
+    margin: 0;
+    background: rgb(170, 170, 170);
+    background: linear-gradient(0deg, rgba(235, 235, 235, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    border-top-right-radius: 10px;
+}
+
+.cell-text {
+    width: 100%;
+}
+
+.cell-text-header {
+    border-bottom: 2px solid rgb(240, 240, 240);
+    margin-bottom: 3px;
+}
+
+.was-submitted input:invalid {
+    border-color: red;
+}
+
+.input-validator {
+    color: red;
+    display: none
+}
+
+.was-submitted input:invalid+.input-validator {
+    visibility: visible;
+}
+
+
+/* left side  */
+
+.left-side-top-margin {
+    margin-top: 65px;
+}
+
+.form-cell-content-left-side {
+    width: 230px;
+    padding-bottom: 58px;
+}
+
+.left-side-header {
+    margin-bottom: 2px;
+    padding: 0;
+}
